@@ -1,0 +1,628 @@
+.colors {
+    background-color: rgb(233, 237, 239);
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+/* Paytm Blue Color */
+:root {
+    --paytm-blue: #00baf2;
+}
+
+/* Reduce navbar height */
+.custom-navbar {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+/* Smaller logo */
+.paytm-logo {
+    height: 20px;
+    padding-left: 80px;
+}
+
+/* Navbar links */
+.custom-navbar .nav-link {
+    font-weight: 500;
+    color: #000;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.custom-navbar .nav-link:hover {
+    color: var(--paytm-blue);
+}
+
+/* Dropdown animation */
+.animate-fade {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Download App button - no border */
+.no-border {
+    background-color: transparent;
+    border: none;
+    color: var(--paytm-blue);
+}
+
+.no-border:hover {
+    background-color: rgba(0, 186, 242, 0.1);
+}
+
+/* Sign In button */
+.btn-primary {
+    background-color: var(--paytm-blue);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #009fcc;
+}
+
+.Sign-btn {
+    background-color: darkblue;
+    color: #ffffff;
+    border-radius: 35px;
+    padding-left: 0;
+    padding-right: 15px;
+    height: 35px;
+    text-align: center;
+    content: 5px;
+    margin-right: 90px;
+    font-weight: 500;
+}
+
+.navbar {
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.container {
+    /* object-fit: contain; */
+    display: flex;
+    max-width: 1172px;
+}
+
+.box-1 {
+    width: 551px;
+    height: 281.5px;
+    background-color: #f7f8f9;
+    color: #000000;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 12px;
+    display: block;
+    flex-basis: 0%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    -webkit-font-smoothing: antialiased;
+}
+
+.box-2 {
+    width: 551px;
+    height: 281.5px;
+    background-color: #f7f8f9;
+    color: #000000;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 12px;
+    display: block;
+    flex-basis: 0%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    -webkit-font-smoothing: antialiased;
+}
+
+.Box-1-recharge {
+    color: #000;
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    height: 22px;
+    margin-bottom: 10px;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    width: 100%;
+    max-width: 572px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+
+/* 📱 Responsive font size for mobile */
+@media (max-width: 600px) {
+    .Box-1-recharge {
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+.images {
+
+    align-self: flex-start;
+    color: rgb(0, 0, 0);
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 148px;
+    margin-bottom: 10px;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    width: 100%;
+    max-width: 527px;
+    -webkit-font-smoothing: antialiased;
+    transition: all 0.3s ease;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    /* centers icons horizontally */
+    align-items: center;
+    /* centers icons vertically */
+    gap: 10px;
+    /* space between each icon box */
+    flex-wrap: wrap;
+    /* wrap icons on smaller screens */
+    padding: 20px;
+
+}
+
+/* 🔵 Hover effect *
+.responsive-box:hover {
+    color: #007bff; /* change this to your brand color 
+    cursor: pointer;
+}
+
+/* 📱 Responsive for mobile screens */
+/* @media (max-width: 600px) {
+    .responsive-box {
+        font-size: 13px;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+    }
+} */
+.ima {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.ima img {
+    width: 48px;
+    /* adjust size as needed */
+    height: 48px;
+    margin-bottom: 8px;
+}
+
+.ima:hover {
+    height: 150px;
+    width: 110px;
+    object-fit: contain;
+    background-color: #ffffff;
+    cursor: pointer;
+    border-radius: 10px;
+    align-content: center;
+
+}
+
+.im {
+    height: 50px;
+    width: 50px;
+
+}
+
+.nav-b {
+    margin-top: 10px;
+}
+
+.qrs {
+    display: flex;
+
+}
+
+.list {
+    display: flex;
+    gap: 18px;
+    /* max-width: 1178px;
+    margin: 0,auto; */
+    margin: 20px;
+    margin-top: 30px;
+    margin-left: 130px;
+}
+
+.img1 {
+    height: 130px;
+    width: 360px;
+    border-radius: 20px;
+
+}
+
+.tickets-container {
+    height: 320px;
+    background-color: #e2f1f5;
+}
+
+.flexd {
+    /* display: flex; */
+    margin-left: 120px;
+    margin-right: 130px;
+
+}
+
+.images1 {
+    height: 10px;
+    display: flex;
+    padding-top: 25px;
+    gap: 50px;
+
+}
+
+.ping {
+    width: 50px;
+}
+
+.paytm-travel-image {
+    height: 20px;
+    flex-direction: row;
+    justify-items: flex-end;
+
+}
+
+.secondflex {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 40px;
+
+}
+
+.booking {
+    height: 200px;
+    width: 1170px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    margin-left: 130px;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.buttoning {
+    height: 5px;
+    padding: 20px;
+    padding-bottom: 35px;
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.frto {
+    margin-left: 25px;
+}
+
+.from1 {
+    margin-bottom: 0;
+    color: gray;
+    /* padding-left: 15px; */
+
+}
+
+.del {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.lists {
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.lights {
+    margin-bottom: 0;
+    color: gray;
+    font-size: 12px;
+}
+
+.bolding {
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+.vertical-line {
+    border-left: 1px solid gray;
+    /* Creates a 2px black solid line on the left */
+}
+
+.sf {
+    border-radius: 10px;
+    color: white;
+    background-color: #05c3f8;
+    height: 55px;
+    width: 170px;
+    border: none;
+    font-weight: 600;
+}
+.howering:hover{
+    cursor: pointer;
+}
+
+.horizontal-line {
+    border: 0.5px solid gray;
+}
+
+.travel-listing {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.categories {
+    border-radius: 8px;
+    background-color: white;
+    border: 0.4px solid gray;;
+}
+.tradingptm{
+    margin-top: 17px;
+    margin-bottom: 20px;
+    max-width: 1178px;
+    border-radius: 19px;
+    background-color: #f7f8f9;
+}
+.firsttrade{
+    margin-top: 60px;
+    margin-left: 80px;
+}
+.ptmmoney{
+  margin-bottom: 20px;
+  width: 50px;
+}
+.invjourney{
+    /* font-size: larger; */
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.invtrading{
+    font-family: 'Inter',sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        /* margin-right: 120px; */
+        line-height: 1.5;
+        margin-bottom: 20px ;
+
+}
+.bottomtext{
+ font-size: 13px;
+font-weight: 500;
+font-family: 'Inter', sans-serif;
+line-height: 1.5;
+color: #6c757d;
+margin-right: 70px;
+}
+.bar {
+    display: flex;
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center;
+    gap: 20px;
+    height: 70px;
+    background-color: #00a1f2;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 70px;
+}
+
+.text24{
+    font-family: 'Inter',sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.button241 {
+    margin-left: auto; /* Pushes it to the right */
+    padding-right: 25px;
+}
+
+.button24{
+    background-color: #00a1f2;
+    border: 1px solid white;
+    border-radius: 40px;
+    height: 35px;
+    width: 135px;
+    text-decoration: solid;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    align-items: center;
+    
+}
+.cards{
+    max-width: 1150px;
+    margin: auto;
+   display: flex;
+   gap: 18px;
+   margin-bottom: 20px;
+   /* margin-left: 100px; */
+}
+.card{
+   border-radius: 25px;
+   height: 800px;
+   width: 50%;
+   background-color: #E6F3FF;
+   padding-left: 45px;
+   padding-top: 65px;
+   margin-bottom: 45px;
+    
+}
+.crecsrd{
+    margin-bottom: 13px;
+}
+.destination{
+    font-family: 'Inter',sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.2;
+    padding-right: 80px;
+    padding-bottom: 10px;
+}
+.ghvk{
+    border: 1px solid navy;
+    color: navy;
+    background-color: #E6F3FF;
+    border-radius: 30px;
+    height: 32px;
+    width: 120px;
+    font-weight: 550;
+    margin-right: 10px;
+}
+/* .ing{
+    display: flex;
+height: 350px;
+align-items: center;
+justify-content: center;
+} */
+ .card-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically if needed */
+    margin-top: 20px;        /* Space above */
+}
+.card-container img {
+    max-width: 100%;  /* Responsive */
+    height: auto;
+}
+.pay-anyone{
+    background-color: #ffffff;
+    max-width: 1150px;
+    margin: 0,auto;
+    margin-left: 135px;
+    height: 600px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+.first-anyone{
+padding-left: 90px;
+padding-top: 100px;
+width: 50%;
+}
+.directly{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 550;
+    line-height: 1.2;
+    font-family: "Roboto" sans-serif;
+    margin-right: 30px;
+}
+.anyone{
+    font-family: 'Inter', sans-serif;
+    font-size:1.2rem ;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.btns{
+    height:45px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.second-anyone{
+    width: 50%;
+}
+.first-business{
+    width: 50%;
+    padding-left:100px ;
+    padding-top: 150px;
+}
+.single-btn{
+    height: 40px;
+    width: 150px;
+    border-radius: 50px;
+    background-color: navy;
+    color: white;
+    font-weight: 600;
+}
+.single-btn:hover{
+    background-color: white;
+    color: navy;
+    border: 1px solid navy;
+}
+
+.Final{
+    margin-left: 135px;
+    margin-right: 140px;
+    padding-top: 40px;
+}
+
+.line-after {
+    display: flex;
+    align-items: baseline;
+
+}
+.line-after::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid gray;
+    margin-left: 10px; /* space between text and line */
+    margin-bottom: 20px;
+}
+.line-after:hover {
+cursor: pointer;
+}
+
+.copyright{
+    color: gray;
+    font-size: 14px;
+    font-weight: 550;
+    padding-top: 35px;
+    padding-left: 10px;
+}
+.social{
+  font-style: none;
+  color: gray;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: end;
+}

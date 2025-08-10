@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paytm: Secure & Fast Payments</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/3563b29070.js" crossorigin="anonymous"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="colors">
+    <!-- Sticky Navbar -->
+    <nav class="navbar  navbar-expand-lg  sticky-top shadow-sm custom-navbar">
+        <div class="container-fluid px-5 py-2 bg-white">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/paytm_logo.svg" alt="Paytm Logo" class="paytm-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Left Navigation -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Dropdowns -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Recharge & Bills
+                        </a>
+                        <ul class="dropdown-menu animate-fade">
+                            <li><a class="dropdown-item" href="#">Mobile Recharge</a></li>
+                            <li><a class="dropdown-item" href="#">Electricity Bill</a></li>
+                            <li><a class="dropdown-item" href="#">Municipal Bill</a></li>
+                            <li><a class="dropdown-item" href="#">Water Bill</a></li>
+                            <li><a class="dropdown-item" href="#">Gas & Cylinder</a></li>
+                            <li><a class="dropdown-item" href="#">Loan EMI</a></li>
+                            <li><a class="dropdown-item" href="#">Insurance Premium</a></li>
+                            <li><a class="dropdown-item" href="#">Challan</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Ticket Booking
+                        </a>
+                        <ul class="dropdown-menu animate-fade">
+                            <li><a class="dropdown-item" href="#">Movie Tickets</a></li>
+                            <li><a class="dropdown-item" href="#">Flight Tickets</a></li>
+                            <li><a class="dropdown-item" href="#">Train Tickets</a></li>
+                            <li><a class="dropdown-item" href="#">Bus Tickets</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Payments & Services
+                        </a>
+                        <ul class="dropdown-menu animate-fade">
+                            <li><a class="dropdown-item" href="#">Loan & Credit Cards</a></li>
+                            <li><a class="dropdown-item" href="#">Wealth</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Paytm for Business
+                        </a>
+                        <ul class="dropdown-menu animate-fade">
+                            <li><a class="dropdown-item" href="#">Online Payments</a></li>
+                            <li><a class="dropdown-item" href="#">Offline Payments</a></li>
+                            <li><a class="dropdown-item" href="#">Business Software</a></li>
+                            <li><a class="dropdown-item" href="#">Business Lending</a></li>
+                            <li><a class="dropdown-item" href="#">Insurance</a></li>
+                            <li><a class="dropdown-item" href="#">For Developers - API</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Company
+                        </a>
+                        <ul class="dropdown-menu animate-fade">
+                            <li><a class="dropdown-item" href="#">About</a></li>
+                            <li><a class="dropdown-item" href="#">Investor Relations</a></li>
+                            <li><a class="dropdown-item" href="#">Sustainability</a></li>
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                            <li><a class="dropdown-item" href="#">News</a></li>
+                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="#">Customer Care</a></li>
+                            <li><a class="dropdown-item" href="#">Careers</a></li>
+                            <li><a class="dropdown-item" href="#">CSR</a></li>
+                            <li><a class="dropdown-item" href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Right Buttons -->
+                <div class="d-flex align-items-center gap-2">
+                    <a href="#" class="btn no-border d-flex align-items-center rounded-pill px-2 "
+                        style="color: darkblue; font-weight: 500;">
+                        <i class="fa-solid fa-download me-2"></i>Download App
+                    </a>
+                    <!-- <div class="_2iOZj">
+                        <img alt="user" src="./assets/paytm-user.svg">
+                        <span title="Sign In">Sign In</span>    
+                    </div> -->
+                    <button class="Sign-btn">
+                        <img alt="user" src="./assets/paytm-user.svg">
+                        <span title="Sign In">Sign In</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- below nav -->
+    <section>
+        <div class="color">
+            <div class="container">
+                <div class="box-1">
+                    <div class="Box-1-recharge">Recharges</div>
+                    <div class="images">
+                        <div class="ima"><a href=""><img class="im" src="./assets/mobile.avif" alt=""> </a><span>Mobile
+                                Recharge</span>
+                        </div>
+                        <div class="ima"> <a href=""><img class="im" src="./assets/car.avif" alt=""></a><span>FASTag
+                                Recharge</span></div>
+                        <div class="ima"> <a href=""><img class="im" src="./assets/dth.avif" alt=""></a><span>DTH
+                                Recharge</span></div>
+                        <div class="ima"> <a href=""><img class="im" src="./assets/all.avif" alt=""></a><span>View All
+                                Products</span></div>
+                    </div>
+                    <div><img class="nav-b" style="height: 60px; width: 530px;" src="./assets/rec-bar.avif" alt="">
+                    </div>
+                </div>
+                <div class="box-2">
+                    <div class="Box-1-recharge">Bill Payments</div>
+                    <div class="images">
+                        <div class="ima"><a href=""><img class="im" src="./assets/bulb.avif" alt="">
+                            </a><span>Electricity Bill</span>
+                        </div>
+                        <div class="ima"> <a href=""><img class="im" src="./assets/lic.png" alt=""></a><span>LIC /
+                                Insurance</span></div>
+                        <div class="ima"> <a href=""><img class="im" src="./assets/emi.avif" alt=""></a><span>Loan EMI
+                                Payment</span></div>
+                        <div class="ima"> <a href=""><img class="im" src="./assets/all.avif" alt=""></a><span>View All
+                                Products</span></div>
+                    </div>
+                    <div><img class="nav-b" style="height: 60px; width: 530px;" src="./assets/belo-nav-bill.avif"
+                            alt=""></div>
+
+                </div>
+            </div>
+    </section>
+
+    <!-- Download Section Images -->
+    <section>
+        <div class="qrs">
+            <ul class="list">
+                <div class="qr-size"><a href="" target="_blank"><img class="img1" src="./assets/qr1.avif"
+                            alt="Scan the QR code to download the Paytm app"></a></div>
+                <div class="qr-size"><a href="" target="_blank"><img class="img1" src="./assets/qr2.avif"
+                            alt="Scan the QR code to download the Paytm app"></a></div>
+                <div class="qr-size"><a href="" target="_blank"><img class="img1" src="./assets/qr3.avif"
+                            alt="Scan the QR code to download the Paytm app"></a></div>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Travelling Section -->
+    <section>
+        <div class="tickets-container">
+            <div class="flexd">
+                <div class="images1">
+                    <div> <a href="" target="_blank"><img class="ping" src="./assets/fli.avif" alt=""></a>
+                        <p>Flights</p>
+                    </div>
+                    <div><a href="" target="_blank"><img class="ping" src="./assets/bus.avif" alt=""></a>
+                        <p>Bus</p>
+                    </div>
+                    <div><a href="" target="_blank"><img class="ping" src="./assets/train.avif" alt=""></a>
+                        <p>Trains</p>
+                    </div>
+                    <div><a href="" target="_blank"><img class="ping" src="./assets/flight.avif" alt=""></a>
+                        <p>Intl.Flights</p>
+                    </div>
+                </div>
+                <div class="secondflex">
+                    <a href=""><img class="paytm-travel-image" src="./assets/Paytm_Travel_Logo.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="booking">
+                <div class="buttoning">
+                    <span><input type="radio" name="sai" id="">One Way</span>
+                    <span><input type="radio" name="sai" id="">Round Trip</span>
+                </div>
+                <div class="d-flex gap-5 ">
+                    <div class="frto howering">
+                        <p class="from1">From</p>
+                        <p class="del">Delhi(DEL)</p>
+                    </div>
+                    <div class="frto howering">
+                        <p class="from1">To</p>
+                        <p class="del"><i class="fa-solid fa-arrow-right-arrow-left"></i>Hyderabad(HYD)</p>
+                    </div>
+                    <div>
+                        <ul class="d-flex lists howering">
+                            <div class="vertical-line"></div>
+
+                            <li class="">
+                                <p class="lights">Depart</p>
+                                <p class="bolding">Mon, 11 Aug 2025</p><i class="fa-light fa-pipe"></i>
+                            </li>
+                            <div class="vertical-line"></div>
+                            <li>
+                                <p class="lights ">Return</p>
+                                <p class="bolding">Choose date</p>
+                            </li>
+                            <div class="vertical-line"></div>
+
+                            <li>
+                                <p class="lights">Passenger & Class</p>
+                                <p class="bolding">1 Traveller, Economy</p>
+                            </li>
+                            <button class="sf">Search Flights</button>
+                        </ul>
+                        <!-- -->
+                    </div>
+                </div>
+                <div class="horizontal-line"></div>
+                <div class="">
+                    <ul class="travel-listing">
+                        <li>
+                            <div style="font-size: 14px; color: gray;font-weight: 450;">Special Fares (Optional)</div>
+                            <div class="" style="font-size: 13px; font-weight: 600; color: rgb(18, 158, 18);"><i
+                                    class="fa-solid fa-indian-rupee-sign"></i> Extra Savings</div>
+                        </li>
+                        <li><button class="categories">
+                                <div style="font-size: 13px; font-weight: 600;">Armed Forces</div>
+                                <div style="font-size: 11px; font-weight: 400; color: gray;">UpTo <i
+                                        class="fa-solid fa-indian-rupee-sign"></i>600 off </div>
+                            </button></li>
+                        <li><button class="categories">
+                                <div style="font-size: 13px; font-weight: 600;">Student</div>
+                                <div style="font-size: 11px; font-weight: 400; color: gray;">Extra Baggage</div>
+                            </button></li>
+                        <li><button class="categories">
+                                <div style="font-size: 13px; font-weight: 600;">Senior Citizen</div>
+                                <div style="font-size: 11px; font-weight: 400; color: gray;">Up to <i
+                                        class="fa-solid fa-indian-rupee-sign"></i>600 off </div>
+                            </button></li>
+
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div></div>
+    </section>
+    <!-- paytm Investment -->
+    <section>
+        <div class=" row-  tradingptm container " style="height: 600px;">
+            <div class="col-6 firsttrade">
+                <div class="ptmmoney"><img style="height: 50px;" src="./assets/ptm-money.webp" alt=""></div>
+                <div class="invjourney">
+                    <h1 class="invjourney">Everything you need to start your <span class="text-info">investment
+                            journey</span></h1>
+                </div>
+                <div>
+                    <h6 class="invtrading">Whether you're a beginner or pro, Paytm Money helps you invest smarter and
+                        achieve financial
+                        independence. Get access to expert opinion, mutual fund SIP, F&O trading, and much more - all in
+                        one app.</h6>
+                </div>
+                <div><a href="https://www.paytmmoney.com/"> <button
+                            style="text-align: center; color: white; background-color: rgb(2, 2, 105); border-radius: 20px; border: none; height: 37px; width: 150px; font-weight: 600; font-family: 'inter',sans-serif; margin-bottom: 20px; ">Learn
+                            more <i class="fa-solid fa-arrow-right"></i></button></a></div>
+                <div>
+                    <p class="text-body-tertiary bottomtext">Investments in the securities market are subject to market
+                        risks, read all the related documents
+                        carefully before investing. For complete Terms & Conditions and Disclaimers visit:
+                        <a href="https://www.paytmmoney.com/stocks/policies/terms"
+                            style="text-decoration: none;">https://www.paytmmoney.com/stocks/policies/terms</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-6"><img style="height: 600px; width: 600px;" src="./assets/paytm-trade.avif" alt=""></div>
+        </div>
+    </section>
+    <!-- 24/7 bar -->
+    <section>
+        <div><a style="text-decoration: none; color: white;" href="https://paytm.com/care/customer-care">
+                <div class="bar">
+                    <div><img style="height: 50px; padding-left: 20px;" src="./assets/ptm-upi.png" alt=""></div>
+                    <div class="text24">24 X 7 Trusted customer support to assist and help you in every step of your
+                        journey</div>
+                    <div class="button241"> <button class="button24">Learn More <i
+                                class="fa-solid fa-arrow-right"></i></button></div>
+                </div>
+
+            </a></div>
+    </section>
+
+    <!-- cards -->
+    <section>
+        <div class="cards">
+            <div class="card">
+                <div class="crecsrd"><img style="height: 45px;" src="./assets/ptm-cards.avif" alt=""></div>
+                <div>
+                    <h1 class="destination">One destination for <span style="color: #00B2FF;">Credit Cards</span></h1>
+                </div>
+                <div>
+                    <p style="font-weight: 550; padding-bottom: 5px; font-size: 18px;">Paytm HDFC, SBI Card & Axis Bank
+                        Credit Card with assured Cashback and incredible offers.</p>
+                </div>
+                <div style="margin-bottom: 50px;"><a href="https://paytm.com/loans-credit-cards/credit-cards/"><button
+                            class="ghvk">Apply Now <i class="fa-solid fa-arrow-right"></i></button></a>
+                    <img style="height: 36px;" src="./assets/ptm-card.avif" alt="">
+                </div>
+                <div class="card-container"><img class="ing" src="./assets/cards.avif " alt=""></div>
+            </div>
+            <div class="card" style="background-color: #E8F7FF;">
+                <div class="crecsrd"><img style="height: 45px;" src="./assets/ptm-ins.png" alt=""></div>
+                <div>
+                    <h1 class="destination" style="padding-right: 200px;">Insurance ka <span
+                            style="color: #00B2FF;">Super Market</span></h1>
+                </div>
+                <div>
+                    <p style="font-weight: 550; padding-bottom: 5px; font-size: 18px;">A Smart, Simple & Transparent
+                        Platform to Explore & Purchase Insurance.</p>
+                </div>
+                <div style="margin-bottom: 50px;"><a href="https://paytminsurance.co.in/"><button class="ghvk">Get It
+                            Now <i class="fa-solid fa-arrow-right"></i></button></a></div>
+                <div class="card-container"><img class="ing" src="./assets/ptm-family.avif " alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- To pay Anyone -->
+    <section>
+        <div class="pay-anyone d-flex">
+            <div class="first-anyone">
+                <div>
+                    <img style="height: 21px;" src="./assets/paytm_logo.svg" alt="">
+                </div>
+                <div><h1 class="directly">Pay anyone directly from your <span style="color: #00B2FF;">bank account</span></h1></div>
+                <div><p class="anyone">Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm UPI or Directly from your Bank Account. Plus, send & receive money from anyone.</p></div>
+                <div ><a><img class="btns" src="./assets/ptm-apple.avif" alt=""></a>
+                <a><img class="btns" src="./assets/ptm-android.avif" alt=""></a></div>
+            </div>
+            <div class="second-anyone"><img style="height: 600px;" src="./assets/ptm-pay-anyone.avif" alt=""></div>
+        </div>
+    </section>
+
+    <!-- Paytm for Business -->
+        <section>
+        <div class="pay-anyone d-flex">
+            <div class="first-business">
+                <div>
+                    <img style="height: 50px;" src="./assets/ptm-business.png" alt="">
+                </div>
+                <div><h1 class="directly">Accept payments <span style="color: #00B2FF;"> online & offline</span></h1></div>
+                <div><p class="anyone">Millions of small & big businesses use Paytm to accept payments anywhere any time with a wide range of solutions for all kind of merchants</p></div>
+                <div ><a><button class="single-btn">Learn more <i class="fa-solid fa-arrow-right"></i></button></a></div>
+            </div>
+            <div class="second-anyone"><img style="height: 587px;" src="./assets/ptm-business-img.avif" alt=""></div>
+        </div>
+    </section>
+   <!-- Final section -->
+    <section>
+         <div class="bg-white last" style="height: 675px;">
+            <div class="Final">
+                <div>
+                <div class="line-after "><a style="text-decoration: none; color: black;" href=""><span style="font-size: 25px;"> + </span><span style="color: gray; font-weight: 550; font-size: 15px; padding-left: 5px;">INvestor Relations</span></a>    </div>
+                 <div class="line-after "><a style="text-decoration: none; color: black;" href=""><span style="font-size: 25px;"> + </span><span style="color: gray; font-weight: 550; font-size: 15px; padding-left: 5px;">More About Paytm</span></a>    </div>
+                <div class="line-after "><a style="text-decoration: none; color: black;" href=""><span style="font-size: 25px;"> + </span><span style="color: gray; font-weight: 550; font-size: 15px; padding-left: 5px;"> Company</span></a>    </div>
+                <div class="line-after "><a style="text-decoration: none; color: black;" href=""><span style="font-size: 25px;">  </span><span style="color: gray; font-weight: 550; font-size: 15px; padding-left: 5px;"> Career</span></a>    </div>
+                <div class="line-after "><a style="text-decoration: none; color: black;" href=""><span style="font-size: 25px;"> + </span><span style="color: gray; font-weight: 550; font-size: 15px; padding-left: 5px;">Recharge & Pay Bills</span></a>    </div>
+                <div class="line-after "><a style="text-decoration: none; color: black;" href=""><span style="font-size: 25px;"> + </span><span style="color: gray; font-weight: 550; font-size: 15px; padding-left: 5px;">Pay Loan EMI, Insurance Premiums & Education Fee</span></a>    </div>
+                <div class="line-after "><a style="text-decoration: none; color: black;" href=""><span style="font-size: 25px;"> + </span><span style="color: gray; font-weight: 550; font-size: 15px; padding-left: 5px;">Book Travel & Entertainment</span></a>    </div>
+                <div class="line-after "><a style="text-decoration: none; color: black;" href=""><span style="font-size: 25px;"> + </span><span style="color: gray; font-weight: 550; font-size: 15px; padding-left: 5px;">Investments & Miscellaneous</span></a>    </div>
+                <div class="line-after "><a style="text-decoration: none; color: black;" href=""><span style="font-size: 25px;"> + </span><span style="color: gray; font-weight: 550; font-size: 15px; padding-left: 5px;">Loans and Credit Cards</span></a>    </div>
+                <div class="line-after "><a style="text-decoration: none; color: black;" href=""><span style="font-size: 25px;"> + </span><span style="color: gray; font-weight: 550; font-size: 15px; padding-left: 5px;">Financial Tools & Calculators</span></a>    </div>
+              <div class="line-after" style="margin-top: 55px;"></div>
+
+            </div>
+            <div>
+                <div class="copyright"><i class="fa-regular fa-copyright"></i> 2025 Paytm</div>
+                <div class="social">Follow Us <a style="color: #000000;" href="" target="_blank"><i class="fa-brands fa-square-facebook"></i></a><a style="color: #000000;" href=""> <i class="fa-brands fa-square-x-twitter"></i></a>
+             <a style="color: #000000;" href=""><i class="fa-brands fa-youtube"></i></a> <a style="color: #000000;" href=""><i class="fa-brands fa-linkedin"></i></i></a><a style="color: #000000;" href=""><i class="fa-brands fa-square-instagram"></i></a></div>
+            </div>
+            </div>
+            
+         </div>
+          <div style="background-color: rgb(21, 172, 231); height: 15px;"></div>
+          <div style="background-color: navy; height: 15px;"></div>
+    </section>
+   
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3563b29070.js" crossorigin="anonymous"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
